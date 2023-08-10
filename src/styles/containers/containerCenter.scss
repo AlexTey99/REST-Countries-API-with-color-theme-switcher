@@ -6,40 +6,11 @@
     width: 100%;
     padding: 40px;
 
-
     .container-input{
         display: flex;
         justify-content: space-between;
         width: 100%;
         height: 30px;
-
-        .input{
-            width: 250px;
-            height: 30px;
-            border: none;
-            padding: 10px;
-            color: white;
-            background: hsl(210deg 21.82% 21.57%);
-        }
-
-        .input:focus{
-           outline: none;
-        }
-
-        .selector{
-            font-size: 12px;
-            width: 150px;
-            color: white;
-            border: none;
-            padding: 5px;
-            background: hsl(210deg 21.82% 21.57%);
-        }
-
-        .selector:focus{
-            outline: none;
-        }
     }
-    
-
     
 }

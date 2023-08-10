@@ -1,6 +1,6 @@
 import { Input } from "../components/Input";
 import {ItemFlag} from "../components/ItemFlag";
-
+import {Select} from "../components/Select";
 import { useEffect, useState } from 'react';
 
 
@@ -24,19 +24,12 @@ const ContainerCenter = () => {
         <div className="containerCenter">
             <div className="container-input">
                 <Input className="input" placeholder="Search for a country" />
-                    <select className="selector" id="frutas">
-                        <option value="Filter">Filter by Region</option>
-                        <option value="Africa">Africa</option>
-                        <option value="America">America</option>
-                        <option value="Asia">Asia</option>
-                        <option value="Europe">Europe</option>
-                        <option value="Oseania">Oseania</option>
-                    </select>
+                <Select className="selector"/>
             </div>
             <div id="containerFlags" className="container-flags">
-                {flags.map((flag) => (
-                  <ItemFlag flag={flag}/>
-                ))}   
+                {flags.map((elemetFlag) => (
+                  <ItemFlag flag={elemetFlag}/>
+                ))}
             </div>
         </div>
     );

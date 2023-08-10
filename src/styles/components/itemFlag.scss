@@ -1,6 +1,14 @@
 
 .item-flag-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 220px;
+    width: 100%;
     background: hsl(209, 23%, 22%);
-    height: 100px;
-    width: 100px;
+
+    .image-flag{
+        width: 100%;
+        height: 120px;
+    }
 }

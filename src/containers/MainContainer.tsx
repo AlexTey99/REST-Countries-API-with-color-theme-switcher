@@ -1,5 +1,5 @@
 
-import {Header} from "../containers/Header";
+import {Header} from "../components/Header";
 import {ContainerCenter} from "../containers/ContainerCenter";
 
 
