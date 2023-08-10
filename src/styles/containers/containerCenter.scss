@@ -1,9 +1,10 @@
 
 .containerCenter{
     display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
-    padding: 50px;
+    padding: 40px;
 
 
     .container-input{

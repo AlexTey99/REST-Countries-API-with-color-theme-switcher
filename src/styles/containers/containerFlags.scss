@@ -1,0 +1,17 @@
+
+
+.container-flags{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    color: white;
+    height: 85%;
+    width: 100%;
+    margin-top: 20px;
+    
+
+    .divFlags{
+        height: 50px;
+        width: 50px;
+        background: black;
+    }
+}
