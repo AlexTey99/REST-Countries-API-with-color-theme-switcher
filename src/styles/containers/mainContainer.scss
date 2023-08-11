@@ -7,8 +7,7 @@
 
 
 .mainContainer{
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
     background: hsl(204.55deg 25.58% 16.86%);
 }

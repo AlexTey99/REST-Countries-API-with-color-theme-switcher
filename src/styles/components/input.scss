@@ -5,8 +5,13 @@
     height: 30px;
     border: none;
     padding: 10px;
-    color: white;
+    color: hsl(0, 0%, 100%);
     background: hsl(210deg 21.82% 21.57%);
+}
+
+.input::placeholder{
+    color: hsl(0, 0%, 98%);
+    font-size: 12px;
 }
 
 .input:focus{

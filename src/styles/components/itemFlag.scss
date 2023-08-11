@@ -13,7 +13,6 @@
 
     .flag-dates-container{
         padding: 20px;
-        font-size: 12px;
 
         .name{
             margin-bottom: 5px;
@@ -22,6 +21,7 @@
 
         span{
             display: flex;
+            font-size: 12px;
             gap: 5px;
 
             .date-text{
