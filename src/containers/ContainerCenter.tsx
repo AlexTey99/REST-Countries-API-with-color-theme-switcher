@@ -9,6 +9,7 @@ const ContainerCenter = () => {
     const [flags, setFlags] = useState([]);
     const [inputValue, setInputValue] = useState('');
     const [searchResults, setSearchResults] = useState([]);
+    const [selectResults, setSelector] = useState('');
 
     useEffect(() => {
       fetch(`https://restcountries.com/v3.1/all`)
@@ -24,13 +25,23 @@ const ContainerCenter = () => {
 
     useEffect(() => {
         /// Filtrar los productos que coinciden con el término de búsqueda en el título
-          const filtered = flags.filter(product =>
-          product.name.common.toLowerCase().includes(inputValue.trim().toLowerCase())
+          const filtered = flags.filter(flag =>
+          flag.name.common.toLowerCase().includes(inputValue.trim().toLowerCase())
           );
 
           setSearchResults(filtered); //Actualizo el array con los valores filtrado
 
     }, [inputValue]);
+
+    //Filtro para el selector
+    useEffect(() => {
+      /// Filtrar los productos que coinciden con el término de búsqueda en la region
+      const filteredSelector = flags.filter(flag =>
+        flag.region.toLowerCase().includes(selectResults.trim().toLowerCase())
+        );
+
+        setSearchResults(filteredSelector); //Actualizo el array con los valores filtrado
+    },[selectResults]);
 
 
     return(
@@ -43,7 +54,12 @@ const ContainerCenter = () => {
                 }  
                 className="input" placeholder="Search for a country" 
                 />
-                <Select className="selector"/>
+                <Select 
+                value={selectResults} 
+                className="selector"
+                handleInputChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
+                setSelector(e.target.value)}
+                />
             </div>
             <div id="containerFlags" className="container-flags">
                 {searchResults.map((elemetFlag) => (
