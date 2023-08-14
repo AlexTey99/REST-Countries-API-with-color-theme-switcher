@@ -4,9 +4,17 @@
     width: 250px;
     height: 30px;
     border: none;
-    padding: 10px;
+    padding: 10px 10px 10px 30px;
     color: hsl(0, 0%, 100%);
     background: hsl(210deg 21.82% 21.57%);
+}
+
+.fa-magnifying-glass{
+    position: absolute;
+    font-size: 14px;
+    top: 80px;
+    left: 35px;
+    color: white;
 }
 
 .input::placeholder{

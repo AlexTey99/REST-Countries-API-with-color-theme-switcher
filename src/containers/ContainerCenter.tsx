@@ -47,6 +47,7 @@ const ContainerCenter = () => {
     return(
         <div className="containerCenter">
             <div className="container-input">
+                <i className="fa-sharp fa-solid fa-magnifying-glass"></i>
                 <Input id="input"
                 value={inputValue}
                 handleInputChange={(e: React.ChangeEvent<HTMLInputElement>) =>
