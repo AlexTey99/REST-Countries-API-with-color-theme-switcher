@@ -1,8 +1,9 @@
 import { Flag } from "../types/flag";
+import { Link } from "react-router-dom";
 
-const ItemFlag = ({ flag}: IProps) => {
+const ItemFlag = ({ flag }: IProps) => {
     return(
-        <div className="item-flag-container">
+        <Link to={`/detailContries/${flag.cca2}`} className="item-flag-container">
             <img className="image-flag" src={flag.flags.png} alt="" />
             <div className="flag-dates-container">
                 <p className="name">{flag.name.common}</p>
@@ -10,7 +11,7 @@ const ItemFlag = ({ flag}: IProps) => {
                 <span>Region: <p className="date-text">{flag.region}</p></span>
                 <span>Capital: <p className="date-text">{flag.capital}</p></span>
                 </div>
-        </div>
+        </Link>
     );
 };
 

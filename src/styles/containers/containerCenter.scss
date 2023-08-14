@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     padding: 25px 20px 20px 20px;
+    background: hsl(207, 26%, 17%);
 
     .container-input{
         display: flex;
@@ -13,7 +14,7 @@
 
     .container-flags{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(180px, 0fr));
         gap: 30px;
         color: white;
         height: 85%;
