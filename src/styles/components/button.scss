@@ -1,0 +1,14 @@
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+    width: 70px;
+    height: 25px;
+    font-size: 12px;
+}
+
+.button:hover{
+    cursor: pointer;
+}
