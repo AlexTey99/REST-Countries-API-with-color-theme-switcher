@@ -17,6 +17,57 @@
         width: 100vw;
         padding: 60px;
 
+        .information-flag-container{
+          display: flex;
+          width: 100%;
+          height: 100%;
+
+          .contain-information-flag-container{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            .information-flags-container-left-and-right{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 100%;
+              height: 65%;
+
+              .left-and-right-container{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 90%;
+
+                .information-flags-left-container{
+                  width: 100%;
+                  height: 100%;
+                  padding: 10px 50px 10px 50px;
+                }
+      
+                .information-flags-right-container{
+                  width: 100%;
+                  height: 100%;
+                  padding: 30px;
+                }
+              }
+
+              .bottom-container{
+                display: flex;
+                width: 100%;
+                padding-left: 50px;
+              }
+            }
+
+            .image-inContainer{
+              height: 300px;
+              max-width: 500px;
+            }
+          }
+        }
+
         .fa-arrow-left{
           position: absolute;
           top: 114px;
