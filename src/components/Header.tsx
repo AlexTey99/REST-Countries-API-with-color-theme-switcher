@@ -1,12 +1,12 @@
 
-const Header = ({onClick}: IProps) => {
+const Header = ({onClick, className}: IProps) => {
 
     return(
-        <div className="header dark">
+        <div className={className}>
             <p className="whereWorld">Where in the world</p>
             
             <div className="icon-moon">
-                <i onClick={onClick} className="fa-sharp fa-regular fa-moon"></i>
+                <i onClick={onClick} id="Moon" className="fa-sharp fa-regular fa-moon"></i>
                 <p>Dark Mode</p>
             </div>
             
@@ -16,6 +16,7 @@ const Header = ({onClick}: IProps) => {
 
 type IProps = {
     onClick?: () => void;
+    className?: string
 }
 
 export{Header};

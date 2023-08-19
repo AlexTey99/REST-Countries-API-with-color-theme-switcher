@@ -2,6 +2,7 @@ import { Input } from "../components/Input";
 import {ItemFlag} from "../components/ItemFlag";
 import {Select} from "../components/Select";
 import { useEffect, useState } from 'react';
+import {Theme} from "../types/theme";
 
 
 const ContainerCenter = () => {
@@ -42,6 +43,7 @@ const ContainerCenter = () => {
 
         setSearchResults(filteredSelector); //Actualizo el array con los valores filtrado
     },[selectResults]);
+    
 
 
     return(
@@ -53,16 +55,16 @@ const ContainerCenter = () => {
                 handleInputChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                 setInputValue(e.target.value)
                 }  
-                className="input" placeholder="Search for a country" 
+                className="input dark" placeholder="Search for a country" 
                 />
                 <Select 
                 value={selectResults} 
-                className="selector"
+                className="selector dark"
                 handleInputChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
                 setSelector(e.target.value)}
                 />
             </div>
-            <div id="containerFlags" className="container-flags">
+            <div id="containerFlags" className="container-flags dark">
                 {searchResults.map((elemetFlag) => (
                   <ItemFlag flag={elemetFlag}/>
                 ))}
