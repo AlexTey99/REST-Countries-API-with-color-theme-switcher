@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Flag } from "../types/flag";
 import {Button} from "../components/Button";
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 const CountryDetailContainer = () =>{
     const {code} = useParams();
@@ -16,15 +18,17 @@ const CountryDetailContainer = () =>{
           .catch(error => {
             console.log(error);
           });
-      }, [code]);
+    }, [code]);
+
+
 
     return(
         <div className="layout-major-container">
             <div className="layot-main-container">
                 <div className="button-container">
                     <i className="fa-sharp fa-solid fa-arrow-left"></i>
-                    <Button className="button dark"/>
-                </div>
+                    <Link className='button' to={'/'}>Back</Link>   
+                  </div>
                 <div id="informationFlagContainer" className="information-flag-container">
                     {country && (
                       <div className='contain-information-flag-container'>
@@ -32,22 +36,22 @@ const CountryDetailContainer = () =>{
                           <div className="information-flags-container-left-and-right">
                             <div className="left-and-right-container">
                                 <div className="information-flags-left-container">
-                                  <h2>{country.name.common}</h2>
+                                  <span><h2>{country.name.common}</h2></span>
                                   <br />
-                                  <p>{"Native Name: " + country.name.official}</p>
-                                  <p>{"Population: " + country.population}</p>
-                                  <p>{"Region" + country.region}</p>
-                                  <p>{"Sub Region: " + country.subregion}</p>
-                                  <p>{"Capital: " + country.capital}</p>
+                                  <span>Native Name: <p>{country.name.official}</p></span>
+                                  <span>Population: <p>{country.population}</p></span>
+                                  <span>Region <p>{country.region}</p></span>
+                                  <span>Sub Region: <p>{country.subregion}</p></span>
+                                  <span>Capital: <p>{country.capital}</p></span>
                                 </div>
                                 <div className="information-flags-right-container">
-                                  <p>{"Top Level Domain: " + country.flag}</p>
-                                  <p>{"Currencie: " + country.currencies.SAR}</p>
-                                  <p>{"Languages: " + country.currencies.SAR}</p>
+                                  <span>Top Level Domain: <p>{country.flag}</p></span>
+                                  <span>Currencie: <p>{+country.currencies}</p></span>
+                                  <span>Languages: <p>{+country.currencies}</p></span>
                                 </div>
                             </div>
                             <div className="bottom-container">
-                                <p>{"Border Countries: " + country.languages}</p>
+                                <span>Border Countries: <p>{+country.languages}</p></span>
                             </div>
                             
                           </div>

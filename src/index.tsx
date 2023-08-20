@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {CountriesLayout} from "./layouts/ContriesLayout";
 import {CountryDetailContainer} from "./containers/CountryDetailContainer";
 import {MainContainer} from "./containers/MainContainer";
+import { ThemeProvider } from './components/Theme';
 
 
 const root = createRoot(document.getElementById("app"));

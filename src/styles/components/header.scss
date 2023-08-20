@@ -9,6 +9,15 @@
     color: white;
     background: hsl(210deg 21.82% 21.57%);
 
+    &.dark{
+        background: hsl(210deg 21.82% 21.57%);
+    }
+
+    &.white{
+        background: white;
+        color: black;
+    }
+
     .whereWorld{
         font-size: 20px;
     }
