@@ -34,9 +34,9 @@ const CountryDetailContainer = () =>{
                       <div className='contain-information-flag-container'>
                           <img className="image-inContainer" src={country.flags.png} alt="" />
                           <div className="information-flags-container-left-and-right">
-                            <div className="left-and-right-container">
-                                <div className="information-flags-left-container">
-                                  <span><h2>{country.name.common}</h2></span>
+                          <span><h2 className='Tittle'>{country.name.common}</h2></span>
+                            <div className="left-and-right-container">                   
+                                <div className="information-flags-left-container"> 
                                   <br />
                                   <span>Native Name: <p>{country.name.official}</p></span>
                                   <span>Population: <p>{country.population}</p></span>

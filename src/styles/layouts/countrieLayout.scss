@@ -9,18 +9,19 @@
       width: 100%;
     }
 
-    .layout_main-content{
-
       .layot-main-container{
         display: flex;
+        align-items: center;
         height: 90vh;
         width: 100vw;
         padding: 60px;
 
         .information-flag-container{
           display: flex;
+          justify-content: center;
+          align-items: center;
           width: 100%;
-          height: 100%;
+          height: 300px;
 
           .contain-information-flag-container{
             display: flex;
@@ -31,15 +32,19 @@
             .information-flags-container-left-and-right{
               display: flex;
               flex-direction: column;
-              align-items: center;
               width: 100%;
-              height: 65%;
+              height: 100%;
+
+              .Tittle{
+                margin-left: 50px;
+                color: white;
+              }
 
               .left-and-right-container{
                 display: flex;
                 align-items: center;
                 width: 100%;
-                height: 85%;
+                height: 100%;
 
                 span{
                   display: flex;
@@ -103,8 +108,9 @@
 
         .fa-arrow-left{
           position: absolute;
-          top: 114px;
-          left: 76px;
+          top: 120px;
+          left: 70px;
+          z-index: 1;
           font-size: 12px;
         }
 
@@ -113,7 +119,5 @@
         }
         
       }
-      
-    }
 
   }
