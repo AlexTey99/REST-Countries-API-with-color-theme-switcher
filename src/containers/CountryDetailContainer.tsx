@@ -38,20 +38,20 @@ const CountryDetailContainer = () =>{
                             <div className="left-and-right-container">                   
                                 <div className="information-flags-left-container"> 
                                   <br />
-                                  <span>Native Name: <p>{country.name.official}</p></span>
-                                  <span>Population: <p>{country.population}</p></span>
-                                  <span>Region <p>{country.region}</p></span>
-                                  <span>Sub Region: <p>{country.subregion}</p></span>
-                                  <span>Capital: <p>{country.capital}</p></span>
+                                  <span>Native Name:<p>{country.name.official}</p></span>
+                                  <span>Population:<p>{country.population}</p></span>
+                                  <span>Region<p>{country.region}</p></span>
+                                  <span>Sub Region:<p>{country.subregion}</p></span>
+                                  <span>Capital:<p>{country.capital}</p></span>
                                 </div>
                                 <div className="information-flags-right-container">
-                                  <span>Top Level Domain: <p>{country.flag}</p></span>
-                                  <span>Currencie: <p>{+country.currencies}</p></span>
-                                  <span>Languages: <p>{+country.currencies}</p></span>
+                                  <span>Top Level Domain:<p>{country.flag}</p></span>
+                                  <span>Currencie:<p>{+country.currencies}</p></span>
+                                  <span>Languages:<p>{+country.currencies}</p></span>
                                 </div>
                             </div>
                             <div className="bottom-container">
-                                <span>Border Countries: <p>{+country.languages}</p></span>
+                                <span>Border Countries:<p>{+country.languages}</p></span>
                             </div>
                             
                           </div>
