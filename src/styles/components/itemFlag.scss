@@ -26,7 +26,6 @@
             display: flex;
             font-size: 12px;
             gap: 5px;
-            color: hsl(0, 0%, 98%);
             text-decoration: none;
 
             .date-text{
@@ -41,4 +40,24 @@
 
 .item-flag-container:hover{
     cursor: pointer;
+}
+
+.dark{
+    .item-flag-container{
+        background: $Dark-Blue;
+
+        #spanItenFlag{
+            color: $White;
+        }
+    }
+}
+
+.white{
+    .item-flag-container{
+        background: $White;
+
+        #spanItenFlag{
+            color: $Very-Dark-Blue;
+        }
+    }
 }

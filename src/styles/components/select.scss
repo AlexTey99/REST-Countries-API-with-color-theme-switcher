@@ -3,12 +3,24 @@
 .selector{
     font-size: 12px;
     width: 150px;
-    color: white;
     border: none;
     padding: 5px;
-    background: hsl(210deg 21.82% 21.57%);
 }
 
 .selector:focus{
     outline: none;
+}
+
+.dark{
+    .selector{
+        background: $Dark-Blue;
+        color: $White;
+    }
+}
+
+.white{
+    .selector{
+        background: $White;
+        color: $Very-Dark-Blue-plus;
+    }
 }

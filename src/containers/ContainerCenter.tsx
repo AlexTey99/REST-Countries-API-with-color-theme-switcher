@@ -53,7 +53,7 @@ const ContainerCenter = () => {
                 handleInputChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                 setInputValue(e.target.value)
                 }  
-                className="input dark" placeholder="Search for a country" 
+                className="input" placeholder="Search for a country" 
                 />
                 <Select 
                 value={selectResults} 
