@@ -6,17 +6,6 @@
     width: 100%;
     max-height: 65px;
     padding: 10px 40px 10px 40px;
-    color: white;
-    background: hsl(210deg 21.82% 21.57%);
-
-    &.dark{
-        background: hsl(210deg 21.82% 21.57%);
-    }
-
-    &.white{
-        background: white;
-        color: black;
-    }
 
     .whereWorld{
         font-size: 20px;
@@ -39,7 +28,19 @@
         }
      
     }
+}
 
-    
 
+.dark{
+    .header{
+        background-color: $Dark-Blue;
+        color: $White;
+    }
+}
+
+.white{
+    .header{
+        background-color: $White;
+        color: $Very-Dark-Blue-plus;
+    }
 }

@@ -16,9 +16,9 @@ const CountriesLayout = () => {
 
 
   return (
-    <div className="layout">
+    <div className={'layout '+theme}>
       <div className="layout_header">
-        <Header className= {'header '+theme} onClick={switchThemes}/>
+        <Header className='header' onClick={switchThemes}/>
       </div>
       <div className='layout_main-content'>
         <Outlet />

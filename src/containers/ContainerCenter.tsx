@@ -2,7 +2,6 @@ import { Input } from "../components/Input";
 import {ItemFlag} from "../components/ItemFlag";
 import {Select} from "../components/Select";
 import { useEffect, useState } from 'react';
-import {Theme} from "../types/theme";
 import { AiOutlineSearch } from 'react-icons/ai';
 
 
@@ -12,7 +11,6 @@ const ContainerCenter = () => {
     const [inputValue, setInputValue] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [selectResults, setSelector] = useState('');
-    const [theme, setTheme] = useState<Theme>('dark');
 
     useEffect(() => {
       fetch(`https://restcountries.com/v3.1/all`)
@@ -46,19 +44,8 @@ const ContainerCenter = () => {
         setSearchResults(filteredSelector); //Actualizo el array con los valores filtrado
     },[selectResults]);
 
-
-    const switchThemes = () =>{
-      if (theme == "dark"){
-        setTheme("white")
-      } else {
-        setTheme("dark")
-      }
-    }
-    
-
-
     return(
-        <div className={"containerCenter " + theme}>
+        <div className={"containerCenter"}>
             <div className="container-input">
                 <AiOutlineSearch className="fa-magnifying-glass"/>
                 <Input id="input"
