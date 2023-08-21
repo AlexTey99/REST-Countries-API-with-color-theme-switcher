@@ -11,6 +11,7 @@
 
       .layot-main-container{
         display: flex;
+        position: relative;
         align-items: center;
         justify-content: center;
         height: 90vh;
@@ -109,6 +110,9 @@
         
 
         .button-container{
+          position: absolute;
+          left: 40px;
+          top: 40px;
           
 
           .icon-ArrowLeft{
