@@ -3,6 +3,7 @@ import { Flag } from "../types/flag";
 import {Button} from "../components/Button";
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { BsArrowLeft } from 'react-icons/bs';
 
 
 const CountryDetailContainer = () =>{
@@ -25,10 +26,9 @@ const CountryDetailContainer = () =>{
     return(
         <div className="layout-major-container">
             <div className="layot-main-container">
-                <div className="button-container">
-                    <i className="fa-sharp fa-solid fa-arrow-left"></i>
-                    <Link className='button' to={'/'}>Back</Link>   
-                  </div>
+                <div className="button-container">  
+                 <Link className='button' to={'/'}><BsArrowLeft className='icon-ArrowLeft'/>Back</Link>   
+                </div>
                 <div id="informationFlagContainer" className="information-flag-container">
                     {country && (
                       <div className='contain-information-flag-container'>

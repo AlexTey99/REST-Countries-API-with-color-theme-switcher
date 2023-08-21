@@ -5,6 +5,14 @@
     padding: 25px 50px 20px 28px;
     background: $Very-Dark-Blue;
 
+    &.dark{
+        background: $Very-Dark-Blue;
+    }
+
+    &.white{
+        background: white;
+    }
+
     .container-input{
         display: flex;
         justify-content: space-between;
