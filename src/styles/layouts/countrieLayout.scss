@@ -128,7 +128,10 @@
 .dark{
   .layot-main-container{
     background: $Very-Dark-Blue;
-    
+  }
+
+  #imageInContainer{
+    box-shadow: 8px 8px 10px -12px black;
   }
   
 }
@@ -140,5 +143,9 @@
     #informationTitles{
       color: $Very-Dark-Blue-plus;
     }
+  }
+
+  #imageInContainer{
+    box-shadow: 8px 8px 10px -12px aquamarine;
   }
 }  

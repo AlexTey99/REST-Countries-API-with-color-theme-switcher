@@ -15,6 +15,7 @@
     .selector{
         background: $Dark-Blue;
         color: $White;
+        box-shadow: 8px 8px 10px -12px black;
     }
 }
 
@@ -22,5 +23,6 @@
     .selector{
         background: $White;
         color: $Very-Dark-Blue-plus;
+        box-shadow: 8px 8px 10px -12px aquamarine;
     }
 }

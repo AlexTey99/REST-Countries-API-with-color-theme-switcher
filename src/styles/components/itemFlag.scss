@@ -5,12 +5,13 @@
     height: 240px;
     width: 100%;
     max-width: 250px;
-    background: hsl(209, 23%, 22%);
     text-decoration: none;
+    border-radius: 5px;
 
     .image-flag{
         width: 100%;
         height: 110px;
+        border-radius: 5px 5px 0px 0px;
     }
 
     .flag-dates-container{
@@ -45,6 +46,7 @@
 .dark{
     .item-flag-container{
         background: $Dark-Blue;
+        box-shadow: 8px 8px 12px -8px black;
 
         #spanItenFlag{
             color: $White;
@@ -55,6 +57,7 @@
 .white{
     .item-flag-container{
         background: $White;
+        box-shadow: 8px 8px 12px -8px aquamarine;
 
         #spanItenFlag{
             color: $Very-Dark-Blue;

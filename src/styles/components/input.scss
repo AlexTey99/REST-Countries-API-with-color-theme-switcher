@@ -26,6 +26,7 @@
 .dark{
     #input{
         background: $Dark-Blue;
+        box-shadow: 8px 8px 10px -12px black;
     }
 }
 .dark input::placeholder {
@@ -36,6 +37,7 @@
     #input{
         background: $White;
         color: $Very-Dark-Blue-plus;
+        box-shadow: 8px 8px 10px -12px aquamarine;
     }
 }
 .white input::placeholder {

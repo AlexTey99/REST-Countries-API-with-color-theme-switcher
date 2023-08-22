@@ -1,4 +1,4 @@
-import { BsMoon } from 'react-icons/bs';
+import { BsFillMoonFill } from 'react-icons/bs';
 
 
 const Header = ({onClick, className}: IProps) => {
@@ -8,7 +8,7 @@ const Header = ({onClick, className}: IProps) => {
             <p className="whereWorld">Where in the world</p>
             
             <div className="icon-moon">
-                <BsMoon onClick={onClick} id="Moon" className='fa-sharp'/>
+                <BsFillMoonFill onClick={onClick} id="Moon" className='fa-sharp'/>
                 <p>Dark Mode</p>
             </div>
             

@@ -35,6 +35,10 @@
     .header{
         background-color: $Dark-Blue;
         color: $White;
+
+        #Moon{
+            color: white;
+        }
     }
 }
 
@@ -42,5 +46,9 @@
     .header{
         background-color: $White;
         color: $Very-Dark-Blue-plus;
+
+        #Moon{
+            color: black;
+        }
     }
 }

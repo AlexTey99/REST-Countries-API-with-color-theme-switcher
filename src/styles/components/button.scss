@@ -16,3 +16,15 @@
 .button:hover{
     cursor: pointer;
 }
+
+.dark{
+    .button{
+        box-shadow: 2px 2px 6px -4px black;
+    }
+}
+
+.white{
+    .button{
+        box-shadow: 2px 2px 6px -4px aquamarine;
+    }
+}

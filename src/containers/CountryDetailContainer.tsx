@@ -32,7 +32,7 @@ const CountryDetailContainer = () =>{
                 <div id="informationFlagContainer" className="information-flag-container">
                     {country && (
                       <div className='contain-information-flag-container'>
-                          <img className="image-inContainer" src={country.flags.png} alt="" />
+                          <img id="imageInContainer" className="image-inContainer" src={country.flags.png} alt="" />
                           <div className="information-flags-container-left-and-right">
                           <span ><h2 id='informationTitles' className='Tittle'>{country.name.common}</h2></span>
                             <div className="left-and-right-container">                   
@@ -51,7 +51,7 @@ const CountryDetailContainer = () =>{
                                 </div>
                             </div>
                             <div className="bottom-container">
-                                <span id='informationTitles' className='information-dates'>Border Countries:<p>{+country.languages}</p></span>
+                                <span id='informationTitles' className='information-dates'>Border Countries:<p>{+country.borders}</p></span>
                             </div>
                             
                           </div>
