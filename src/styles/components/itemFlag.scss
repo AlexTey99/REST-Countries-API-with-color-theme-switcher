@@ -47,7 +47,7 @@
 .dark{
     .item-flag-container{
         background: $Dark-Blue;
-        box-shadow: 8px 8px 12px -8px black;
+        box-shadow: 8px 8px 12px -8px $Very-Dark-Blue-plus;
 
         #spanItenFlag{
             color: $White;
