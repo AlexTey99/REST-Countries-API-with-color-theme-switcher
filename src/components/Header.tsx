@@ -5,7 +5,7 @@ const Header = ({onClick, className}: IProps) => {
 
     return(
         <div className={className}>
-            <p className="whereWorld">Where in the world</p>
+            <p className="whereWorld">Where in the world?</p>
             
             <div className="icon-moon">
                 <BsFillMoonFill onClick={onClick} id="Moon" className='fa-sharp'/>

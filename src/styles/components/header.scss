@@ -9,6 +9,7 @@
 
     .whereWorld{
         font-size: 20px;
+        font-weight: bold;
     }
     
     .icon-moon{
@@ -23,8 +24,9 @@
              cursor: pointer;
          }
      
-         .whereWorld{
-             font-size: 20px;
+        p{
+            font-weight: bold;
+            font-size: 20px;
         }
      
     }
