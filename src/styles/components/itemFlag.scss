@@ -2,7 +2,6 @@
 .item-flag-container{
     display: flex;
     flex-direction: column;
-    height: 240px;
     width: 100%;
     max-width: 250px;
     text-decoration: none;
@@ -15,17 +14,18 @@
     }
 
     .flag-dates-container{
+        height: 100%;
         padding: 20px;
 
         .name{
             margin-bottom: 5px;
-            font-size: 16px;
+            font-size: 18px;
             color: white;
         }
 
         span{
             display: flex;
-            font-size: 12px;
+            font-size: 14px;
             gap: 5px;
             text-decoration: none;
 
@@ -57,7 +57,7 @@
 .white{
     .item-flag-container{
         background: $White;
-        box-shadow: 8px 8px 12px -8px aquamarine;
+        box-shadow: 8px 8px 12px -8px $Dark-Gray;
 
         #spanItenFlag{
             color: $Very-Dark-Blue;
