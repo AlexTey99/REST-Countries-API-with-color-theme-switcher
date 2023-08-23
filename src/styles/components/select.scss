@@ -1,14 +1,19 @@
 
 
 .selector{
-    font-size: 12px;
+    font-size: 14px;
     width: 150px;
     border: none;
-    padding: 5px;
+    padding: 5px 10px 5px 5px;
+    border-radius: 5px;
 }
 
 .selector:focus{
     outline: none;
+}
+
+.selector:hover{
+    cursor: pointer;
 }
 
 .dark{

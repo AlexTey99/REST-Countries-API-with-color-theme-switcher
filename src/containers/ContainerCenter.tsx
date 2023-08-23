@@ -57,12 +57,12 @@ const ContainerCenter = () => {
                 />
                 <Select 
                 value={selectResults} 
-                className="selector dark"
+                className="selector"
                 handleInputChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
                 setSelector(e.target.value)}
                 />
             </div>
-            <div id="containerFlags" className="container-flags dark">
+            <div id="containerFlags" className="container-flags">
                 {searchResults.map((elemetFlag) => (
                   <ItemFlag flag={elemetFlag}/>
                 ))}

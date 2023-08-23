@@ -2,23 +2,23 @@
 .containerCenter{
     display: flex;
     flex-direction: column;
-    padding: 25px 50px 20px 28px;
+    padding: 20px 40px 20px 40px;
 
     .container-input{
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: 30px;
+        height: 50px;
+        margin-bottom: 20px;
     }
 
     .container-flags{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(230px, 0fr));
-        gap: 30px;
+        gap: 1.8rem;
         color: white;
         height: 85%;
         width: 100%;
-        margin-top: 20px;
         
     
         .divFlags{
