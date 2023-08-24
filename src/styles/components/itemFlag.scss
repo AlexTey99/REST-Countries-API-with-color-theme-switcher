@@ -29,10 +29,12 @@
             font-size: 14px;
             gap: 5px;
             text-decoration: none;
-
             .date-text{
                 color: hsl(0, 0%, 52%);
                 text-decoration: none;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
 
