@@ -7,9 +7,17 @@
     height: 8vh;
     padding: 10px 40px 10px 40px;
 
+    
+
     .whereWorld{
         font-size: 20px;
         font-weight: bold;
+    }
+
+    @media screen and (max-width: 375px){
+        .whereWorld{
+            font-size: 16px;
+        }
     }
     
     .icon-moon{
@@ -19,19 +27,34 @@
         .fa-sharp{
             font-size: 20px;
             margin-right: 10px;
-         }
+        }
      
-         .fa-sharp:hover{
+        .fa-sharp:hover{
              cursor: pointer;
-         }
+        }
      
         p{
             font-weight: bold;
             font-size: 20px;
         }
+
+        @media screen and (max-width: 375px){
+            p{
+                font-size: 16px;
+            }
+        }
+
+        
      
     }
 }
+
+@media screen and (max-width: 375px) {
+    .header{
+        padding: 14px;
+    }
+}
+
 
 
 .dark{
@@ -54,3 +77,4 @@
         }
     }
 }
+

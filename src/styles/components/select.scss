@@ -7,6 +7,11 @@
     padding: 5px 10px 5px 5px;
     border-radius: 5px;
 }
+@media screen and (max-width: 375px){
+    .selector{
+        margin-left: 18px;
+    }
+}
 
 .selector:focus{
     outline: none;
