@@ -41,6 +41,12 @@
                 color: white;
               }
 
+              @media screen and (max-width: 375px){
+                .Tittle{
+                  margin: 0px;
+                }
+              }
+
               .left-and-right-container{
                 display: flex;
                 align-items: center;
@@ -62,16 +68,40 @@
                   }
                 }
 
+                @media screen and (max-width: 375px){
+                  .information-dates{
+                    margin-bottom: 6px;
+                  }
+                }
+
                 .information-flags-left-container{
                   width: 100%;
                   height: 100%;
                   padding: 10px 50px 10px 50px;
+                }
+
+                @media screen and (max-width: 375px){
+                  .information-flags-left-container{
+                    padding: 0px;
+                  }
                 }
       
                 .information-flags-right-container{
                   width: 100%;
                   height: 100%;
                   padding: 30px;
+                }
+
+                @media screen and (max-width: 375px){
+                  .information-flags-right-container{
+                    padding: 0px;
+                  }
+                }
+              }
+
+              @media screen and (max-width: 375px){
+                .left-and-right-container{
+                  flex-direction: column;
                 }
               }
 
@@ -99,11 +129,31 @@
                   }
                 }
               }
+
+              @media screen and (max-width: 375px){
+                .bottom-container{ 
+                  padding: 10px 0px 0px 0px;
+                }
+              }
             }
 
             .image-inContainer{
               height: 300px;
               max-width: 500px;
+            }
+
+            @media screen and (max-width: 375px){
+              .image-inContainer{
+                height: 180px;
+                margin-bottom: 10px;
+              }
+            }
+          }
+
+          @media screen and (max-width: 375px){
+            .contain-information-flag-container{
+              flex-direction: column;
+              align-items: normal;
             }
           }
         }
@@ -121,6 +171,19 @@
             font-size: 12px;
           }
         } 
+
+        @media screen and (max-width: 375px){
+          .button-container{
+            top: 30px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 375px){
+        .layot-main-container{
+          align-items: normal;
+          padding-top: 82px;
+        }
       }
 }
 
